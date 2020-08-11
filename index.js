@@ -23,8 +23,15 @@ app.get('/resta', (req, res) => {
 	res.send(String(r.resta(n1,n2))).end();
 })
 
+//Multiplicación
+app.get('/multiplicacion', (req, res) => {
+    var n1 = parseInt(req.query.n1);
+    var n2 = parseInt(req.query.n2);
+	var m = require('./multiplicacion.js');
+	res.send(String(m.multiplicacion(n1,n2))).end();
+})
+
 const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
 app.listen(PORT, () => {
   console.log(`Servidor web escuchando en el puerto ${PORT}`);
 });
