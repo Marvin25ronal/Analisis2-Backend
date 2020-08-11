@@ -31,6 +31,14 @@ app.get('/multiplicacion', (req, res) => {
 	res.send(String(m.multiplicacion(n1,n2))).end();
 })
 
+//División
+app.get('/division', (req, res) => {
+    var n1 = parseInt(req.query.n1);
+    var n2 = parseInt(req.query.n2);
+	var d = require('./division.js');
+	res.send(String(d.division(n1,n2))).end();
+})
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor web escuchando en el puerto ${PORT}`);
