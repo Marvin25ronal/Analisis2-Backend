@@ -27,6 +27,7 @@ app.get('/resta', (req, res) => {
 app.get('/multiplicacion', (req, res) => {
     var n1 = parseInt(req.query.n1);
     var n2 = parseInt(req.query.n2);
+	var n3 = parseInt(req.query.n3);
 	var m = require('./multiplicacion.js');
 	res.send(String(m.multiplicacion(n1,n2))).end();
 })
