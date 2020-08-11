@@ -1,0 +1,22 @@
+{
+  "name": "analisis2-backend",
+  "version": "1.0.0",
+  "description": "Back-end de la aplicación para la Fase 1 del proyecto para primer parcial, Análisis y Diseño de Sistemas 2 ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marvin25ronal/Analisis2-Backend.git"
+  },
+  "author": "Ingridrpm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marvin25ronal/Analisis2-Backend/issues"
+  },
+  "homepage": "https://github.com/Marvin25ronal/Analisis2-Backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
